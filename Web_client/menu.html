@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Restaurante - Menú</title>
+    <link rel="stylesheet" href="css/estilos.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Nuestro Menú</h1>
+        <nav>
+            <ul>
+                <li style="font-size: 1.2em;"><a href="index.html">Inicio</a></li>
+                <li style="font-size: 1.2em;"><a href="menu.html">Menú</a></li>
+                <li style="font-size: 1.2em;">
+                    <a href="carrito.html">
+                        Carrito
+                        <img src="imagen/carrito.jpg" alt="Carrito" style="width: 32px; height: 32px; vertical-align: middle; margin-left: 6px;">
+                        (<span id="cantidad-items-carrito">0</span>)
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="menu-principal">
+        <section class="categoria">
+            <h2>Entradas</h2>
+            <ul class="lista-platos">
+                <li class="plato-item">
+                    <img src="https://www.clarin.com/img/2018/05/23/S1uISXQJX_1256x620__2.jpg" alt="Empanadas">
+                    <div>
+                        <h3>Empanadas Variadas (3 unidades)</h3>
+                        <p class="descripcion">Carne, pollo, jamón y queso.</p>
+                        <p class="precio">$3000</p>
+                        <button class="agregar-carrito" data-id="entrada1" data-nombre="Empanadas Variadas (3 unidades)" data-precio="3000">Agregar al Carrito</button>
+                    </div>
+                </li>
+                <li class="plato-item">
+                    <img src="https://www.mundopoder.com/contenido/noticias/original/1736773888.jpeg" alt="Provoleta">
+                    <div>
+                        <h3>Provoleta a la Parrilla</h3>
+                        <p class="descripcion">Queso provolone fundido con orégano y aceite de oliva.</p>
+                        <p class="precio">$5600</p>
+                        <button class="agregar-carrito" data-id="entrada2" data-nombre="Provoleta a la Parrilla" data-precio="5600">Agregar al Carrito</button>
+                    </div>
+                </li>
+                <li class="plato-item">
+                    <img src="https://s1.elespanol.com/2015/05/06/cocinillas/cocinillas_31256875_116173693_1706x960.jpg" alt="Ensalada César">
+                    <div>
+                        <h3>Ensalada César</h3>
+                        <p class="descripcion">Lechuga romana, crutones, queso parmesano y aderezo César.</p>
+                        <p class="precio">$8900</p>
+                        <button class="agregar-carrito" data-id="entrada3" data-nombre="Ensalada César" data-precio="8900">Agregar al Carrito</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="categoria">
+            <h2>Nuestros Favoritos</h2>
+            <ul class="lista-platos">
+                <li class="plato-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS95ksSzBOyRNcLk4qWaLFPy3ZhjU8sOeWAiw&s" alt="Bife de Chorizo">
+                    <div>
+                        <h3>Bife de Chorizo (300gr)</h3>
+                        <p class="descripcion">Corte argentino a la parrilla, jugoso y sabroso.</p>
+                        <p class="precio">$12000</p>
+                        <button class="agregar-carrito" data-id="principal1" data-nombre="Bife de Chorizo (300gr)" data-precio="12000">Agregar al Carrito</button>
+                    </div>
+                </li>
+                <li class="plato-item">
+                    <img src="https://www.gourmet.cl/wp-content/uploads/2023/11/BOLON%CC%83ESA.jpg" alt="Pasta con Salsa Bolognesa">
+                    <div>
+                        <h3>Pasta Casera con Salsa Bolognesa</h3>
+                        <p class="descripcion">Fideos frescos con salsa de carne tradicional.</p>
+                        <p class="precio">$9600</p>
+                        <button class="agregar-carrito" data-id="principal2" data-nombre="Pasta Casera con Salsa Bolognesa" data-precio="9600">Agregar al Carrito</button>
+                    </div>
+                </li>
+                <li class="plato-item">
+                    <img src="https://images-gmi-pmc.edge-generalmills.com/40127da7-2943-41bd-be6d-73a307b53197.jpg" alt="Pollo al Horno con Papas">
+                    <div>
+                        <h3>Pollo al Horno con Papas Rústicas</h3>
+                        <p class="descripcion">Muslo de pollo horneado con hierbas y papas al romero.</p>
+                        <p class="precio">$11500</p>
+                        <button class="agregar-carrito" data-id="principal3" data-nombre="Pollo al Horno con Papas Rústicas" data-precio="11500">Agregar al Carrito</button>
+                    </div>
+                </li>
+                <li class="plato-item">
+                    <img src="https://www.clarin.com/img/2023/08/01/SL3EslnOA_1200x630__1.jpg" alt="Pizza Margherita">
+                    <div>
+                        <h3>Pizza Margherita</h3>
+                        <p class="descripcion">Salsa de tomate, mozzarella fresca y albahaca.</p>
+                        <p class="precio">$14000</p>
+                        <button class="agregar-carrito" data-id="principal4" data-nombre="Pizza Margherita" data-precio="14000">Agregar al Carrito</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="categoria">
+            <h2>Postres y Productos</h2>
+            <ul class="lista-platos">
+                <li class="plato-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeu6c6N6Tjz3uGRLnKt97SqS4E0eSoX1UL2g&s" alt="Tiramisú">
+                    <div>
+                        <h3>Tiramisú Casero</h3>
+                        <p class="descripcion">Postre italiano de café y queso mascarpone.</p>
+                        <p class="precio">$4500</p>
+                        <button class="agregar-carrito" data-id="postre1" data-nombre="Tiramisú Casero" data-precio="4500">Agregar al Carrito</button>
+                    </div>
+                </li>
+                <li class="plato-item">
+                    <img src="https://laopinionaustral.com.ar/media/uploads/2024/04/helados-dia.jpg" alt="Helado Artesanal">
+                    <div>
+                        <h3>Helado Artesanal (2 bochas)</h3>
+                        <p class="descripcion">Variedad de sabores a elección.</p>
+                        <p class="precio">$5500</p>
+                        <button class="agregar-carrito" data-id="postre2" data-nombre="Helado Artesanal (2 bochas)" data-precio="5500">Agregar al Carrito</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shatalito</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

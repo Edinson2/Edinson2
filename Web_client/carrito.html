@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shatalito - Carrito de Compras</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Tu Carrito de Compras Shatalito</h1>
+        <nav>
+           
+            <ul>
+                <li><a href="index.html" style="font-size: 1.2em;">Inicio</a></li>
+                <li><a href="menu.html" style="font-size: 1.2em;">Menú</a></li>
+                <li><a href="carrito.html" style="font-size: 1.2em;">
+                    Carrito 
+                    <img src="imagen/carrito.jpg" alt="Carrito" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 6px;">
+                    (<span id="cantidad-items-carrito">0</span>)
+                </a></li>
+            </ul>
+            
+
+        </nav>
+    </header>
+
+    <main class="carrito-principal">
+        <section id="lista-de-productos-carrito">
+            <p>Tu carrito está vacío.</p>
+        </section>
+
+        <section class="resumen-carrito">
+            
+           <!--<p>Subtotal: $<span id="subtotal">0.00</span></p>-->  
+            <!--  <p>Envío: $<span id="envio">0.00</span></p> -->
+            <p class="total">Total: $<span id="total">0.00</span></p>
+            <button class="button" id="ir-a-pagar">Ir a Pagar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tu Shatalito</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
